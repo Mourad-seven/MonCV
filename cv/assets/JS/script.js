@@ -1,0 +1,60 @@
+$(document).ready(function(){
+    $("#twitter").mouseleave(function(){
+        $("#developp").slideUp(1000);
+    });
+});
+$(document).ready(function(){
+    $("#twitter").mouseenter(function(){
+        $("#developp").slideDown(1000);
+    });
+});
+$(document).ready(function(){
+    $("#fb").mouseleave(function(){
+        $("#developpfb").slideUp(1000);
+    });
+});
+$(document).ready(function(){
+    $("#fb").mouseenter(function(){
+        $("#developpfb").slideDown(1000);
+    });
+});
+$(document).ready(function(){
+    $("#xpblock").click(function(){
+        $("#xp").slideDown(1000);
+    });
+});
+$(document).ready(function(){
+    $("#xpblock").mouseleave(function(){
+        $("#xp").slideUp(1000);
+    });
+});
+$(document).ready(function(){
+    $("#Formationsblock").hover(function(){
+        $("#Formations").slideDown(1000);
+    });
+});
+$(document).ready(function(){
+    $("#Formationsblock").mouseleave(function(){
+        $("#Formations").slideUp(1000);
+    });
+});
+$(document).ready(function(){
+    $("#Etudesblock").hover(function(){
+        $("#Etudes").slideDown(1000);
+    });
+});
+$(document).ready(function(){
+    $("#Etudesblock").mouseleave(function(){
+        $("#Etudes").slideUp(1000);
+    });
+});
+$(document).ready(function(){
+    $("#Hobbysblock").hover(function(){
+        $("#Hobbys").slideDown(1000);
+    });
+});
+$(document).ready(function(){
+    $("#Hobbysblock").mouseleave(function(){
+        $("#Hobbys").slideUp(1000);
+    });
+});
