@@ -19,42 +19,47 @@ $(document).ready(function(){
     });
 });
 $(document).ready(function(){
-    $("#xpblock").click(function(){
+    $("#xpblock").mouseenter(function(){
         $("#xp").slideDown(1000);
     });
 });
 $(document).ready(function(){
-    $("#xpblock").mouseleave(function(){
-        $("#xp").slideUp(1000);
+    $(".toutxp").mouseleave(function(){
+        $("#xp").slideUp(0);
     });
 });
 $(document).ready(function(){
-    $("#Formationsblock").hover(function(){
+    $("#Formationsblock").mouseenter(function(){
         $("#Formations").slideDown(1000);
     });
 });
 $(document).ready(function(){
-    $("#Formationsblock").mouseleave(function(){
-        $("#Formations").slideUp(1000);
+    $(".toutformations").mouseleave(function(){
+        $("#Formations").slideUp(0);
     });
 });
 $(document).ready(function(){
-    $("#Etudesblock").hover(function(){
+    $("#Etudesblock").mouseenter(function(){
         $("#Etudes").slideDown(1000);
     });
 });
 $(document).ready(function(){
-    $("#Etudesblock").mouseleave(function(){
-        $("#Etudes").slideUp(1000);
+    $(".toutetudes").mouseleave(function(){
+        $("#Etudes").slideUp(0);
     });
 });
 $(document).ready(function(){
-    $("#Hobbysblock").hover(function(){
+    $("#Hobbysblock").mouseenter(function(){
         $("#Hobbys").slideDown(1000);
     });
 });
 $(document).ready(function(){
-    $("#Hobbysblock").mouseleave(function(){
-        $("#Hobbys").slideUp(1000);
+    $(".touthobbys").mouseleave(function(){
+        $("#Hobbys").slideUp(0);
     });
+});
+$(".nav li").mouseover(function () {
+        $(this).siblings().addClass("fade");
+    }).mouseout(function () {
+        $(this).siblings().removeClass("fade");
 });

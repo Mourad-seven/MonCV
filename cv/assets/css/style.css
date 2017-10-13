@@ -1,5 +1,6 @@
+
 body {
-	background-color: #AAAAAA;
+	background-color: white;
 	font-family : Verdana, Geneva, sans-serif;
 }
 .mesinfos img{
@@ -12,29 +13,54 @@ body {
 	height: 80px;
 
 }
-.Name {
-	color: darkred;
-	font-size: 75px;
-	font-style: arial;
-	text-align: center;
-	background-image: url(http://images.all-free-download.com/images/graphiclarge/black_pattern_background_206850.jpg);
-}
-ul {
-	padding: 0; margin: 0;
-	text-align: center; /* centrer le texte */
-	 border: 1px solid #555;
-	 border-radius: 40px;
 
+@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro:700);
+
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
-ul li {
-	display: inline;
-	list-style: none;
+
+body {
+    background: #FFFFFF;
 }
-ul a {
-	display:inline-block;
-	margin: 0 30px;
-	text-decoration: none;
+
+a, a:visited {
+    outline: medium none;
+    text-decoration: none;
+    transition: all 0s ease 0s;
+    -moz-transition: all 0s ease 0s;
+    -webkit-transition: all 0s ease 0s;
 }
+
+.nav {
+    margin: 5% 0;
+    text-align: center;
+}
+
+.nav li {
+    display: inline-block;
+}
+
+.nav li a {
+    display: block;
+    font: 20px/1.2 'Source Code Pro', sans-serif;
+    padding: 5px 15px;
+    text-transform: uppercase;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+    color: #666666;   
+}
+
+.nav li a:hover, .nav li a:active {
+    color: #B0392E;
+    text-decoration: none;
+}
+
+.nav li.fade a {
+    color: transparent;
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+}  
 .item:hover{  
 	background-color: red;
 	font-size: 30px;
@@ -43,9 +69,8 @@ ul a {
 	float:left;
 	width: 16%;
 	height: 1500px;
-	background-color: #35405A;
+	background-color: #212625;
 	padding: 2%;
-	border-radius: 40px;
 
 }
 .mesinfos{
@@ -61,17 +86,15 @@ ul a {
 	display: inline-block;
 	 width:36%; 
 	 height: 1500px;
-   background-color:#B94B41; 
+   background-color:rgba(12,13,11,0.1)    /* 10% opaque red */ ;
    padding: 2%;
-   border-radius: 40px;
 }
 .colonnetrois {
 	float: right;
 	width:36%;
 	height: 1500px;
-   background-color:#E7C346;
+   background-color:#8B8C81;
    padding: 2%;
-   border-radius: 40px;
 }
 #developp {
 	padding-top: 50%;
@@ -126,6 +149,10 @@ a #twitter{
 	border-style: solid;
 	border-top: none;
 	display: none;
+	color:white;
+	border-color: black;
+	font-size: 20px;
+	font-weight: bold;
 }
 #fb img {
       height:80px;
@@ -149,131 +176,135 @@ a #fb{
 	height:180px;
 	width: 180px;
 }
+/*EXPERIENCES*/
+.toutxp{
+	height: 750px;
+}
 #xp{
-	padding: 15px;
-	margin-top: 0px;
-	height: 28%;
+	height: 400px;
 	display: none;
-	border-style: solid;
-	border-color: black;
+	font-size: 25px;
 }
 #xpblock{
+	font-weight: bold;
+	letter-spacing: 5px;
+	border-radius: 100%;
+	padding-top: 30%;
 	background-size: 750px 800px;
-	background-image:url(https://i.pinimg.com/564x/ca/66/0f/ca660f13ddb6d2ab60dec0ed609c494c.jpg);
-	padding-top: 300px;
-	font-size: 50px;
-	height: 33%;
-	border-style: solid;
-	border-color: black;
+	font-size: 75px;
+	height: 500px;
 }
 #xpblock p{
-	text-shadow: 3px 2px grey;
 	text-align: center;
 	vertical-align: middle;
-	border-style: solid;
-	border-color: black;
 }
 #xpblock:hover{
-	padding-bottom: -100px;
-	padding: 0px;
-	font-size: 25px;
-	height: 5%;
+	font-weight: normal;
+	letter-spacing: 0px;
+	background-color: #212625;
+	border-radius: 0%;
+	padding-top: 5%;
+	font-size: 75px;
+	height: 100px;
 	 -webkit-transition-duration: 2s, height 4s;
     transition-duration:  2s;
-    border-style: solid;
-	border-color: black;
+}
+/*FORMATIONS*/
+.toutformations{
+	height: 750px;
 }
 #Formations{
-	padding: 15px;
-	padding-top: 0px;
-	height: 28%;
+	height: 400px;
 	display: none;
-	border-style: solid;
-	border-color: black;
+	font-size: 25px;
 }
-#Formationsblock{
-	padding-top: 300px;
-	font-size: 50px;
-	height: 33%;
-	border-style: solid;
-	border-color: black;
+#Formationsblock{;
+	font-weight: bold;
+	letter-spacing: 5px;
+	border-radius: 100%;
+	padding-top: 30%;
+	background-size: 750px 800px;
+	font-size: 75px;
+	height: 500px;
 }
 #Formationsblock p{
-	text-shadow: 3px 2px grey;
 	text-align: center;
 	vertical-align: middle;
-	border-style: solid;
-	border-color: black;
 }
 #Formationsblock:hover{
-	padding-bottom: -100px;
-	padding: 0px;
-	font-size: 25px;
-	height: 5%;
+	font-weight: normal;
+	letter-spacing: 0px;
+	background-color: #212625;
+	border-radius: 0%;
+	padding-top: 5%;
+	font-size: 75px;
+	height: 100px;
 	 -webkit-transition-duration: 2s, height 4s;
     transition-duration:  2s;
-    border-style: solid;
-	border-color: black;
+}
+/*ETUDES*/
+.toutetudes{
+height: 750px;
 }
 #Etudes{
-	padding:15px;
-	border: 30px solid transparent;
-	margin-top: 0px;
-	height: 28%;
+	height: 400px;
 	display: none;
+	font-size: 25px;
 }
 #Etudesblock{
+	font-weight: bold;
+	letter-spacing: 5px;
+	border-radius: 100%;
+	padding-top: 30%;
 	background-size: 750px 800px;
-	background-image: url(https://png.pngtree.com/thumb_back/fh260/back_pic/03/62/11/3757a997761e0e4.jpg);
-	padding-top: 300px;
-	font-size: 50px;
-	height: 33%;
-	border-style: solid;
-	border-color: black;
+	font-size: 75px;
+	height: 500px;
 }
 #Etudesblock p{
-	text-shadow: 3px 2px grey;
 	text-align: center;
 	vertical-align: middle;
-	border-style: solid;
-	border-color: black;
 }
 #Etudesblock:hover{
-	padding-bottom: -100px;
-	padding: 0px;
-	font-size: 25px;
-	height: 5%;
+	font-weight: normal;
+	letter-spacing: 0px;
+	background-color: #212625;
+	border-radius: 0%;
+	padding-top: 5%;
+	font-size: 75px;
+	height: 100px;
 	 -webkit-transition-duration: 2s, height 4s;
-    transition-duration:  2s;
+    transition-duration:  2s;}
+/*HOBBYS*/
+.touthobbys{
+	margin-top: 10px;
+	height: 750px;
 }
 #Hobbys{
-	padding:15px;
-	border: 30px solid transparent;
-	margin-top: 0px;
-	height: 28%;
+	height: 400px;
 	display: none;
+	font-size: 25px;
 }
 #Hobbysblock{
+	font-weight: bold;
+	letter-spacing: 5px;
+	border-radius: 100%;
+	padding-top: 30%;
 	background-size: 750px 800px;
-	background-image: url();
-	padding-top: 300px;
-	font-size: 50px;
-	height: 33%;
-	border-style: solid;
-	border-color: black;
+	font-size: 75px;
+	height: 500px;
 }
 #Hobbysblock p{
-	text-shadow: 3px 2px grey;
 	text-align: center;
 	vertical-align: middle;
-	border-style: solid;
-	border-color: black;
 }
 #Hobbysblock:hover{
-	padding-bottom: -100px;
-	padding: 0px;
-	font-size: 25px;
-	height: 5%;
+	font-weight: normal;
+	letter-spacing: 0px;
+	background-color: #212625;
+	border-radius: 0%;
+	padding-top: 5%;
+	font-size: 75px;
+	height: 100px;
 	 -webkit-transition-duration: 2s, height 4s;
     transition-duration:  2s;
 }
@@ -281,4 +312,99 @@ a #fb{
 	border-style: solid;
 	border-color: black;
 	height: 50%;
+}
+header img{
+	margin-left: 90px;
+	float:left;
+	width: 200px;
+	height: 200px;
+}
+header {
+	display: flex;
+  margin-top: -90px;
+  background: #BFA288;
+  padding-top: 100px;
+  overflow: hidden;
+  color: #FFF;
+  height: 300px;
+}
+header * {
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+header .text-wrap {
+  width: 200px;
+  height: 100%;
+}
+header .text-wrap svg {
+  position: absolute;
+  width: 75%;
+  height: auto;
+  font: bold 100px sans-serif;
+  text-transform: uppercase;
+  float:right;
+}
+header .text-wrap svg .gradient-layer {
+  fill: url(#gr-overlay);
+}
+.surname{
+	padding-top: 200px;
+	padding-left: 0px;
+	margin-left: -120px;
+	font-weight: bold;
+	float: left;
+	font-size: 80px;
+	color: black ;
+	font-style: arial;
+	text-align: center;
+}
+footer img{
+	margin-left: 100px;
+	width: 200px;
+	height: 200px;
+}
+footer {
+	display: flex;
+  margin-top: 0px;
+  background: #BFA288;
+  padding-top: 100px;
+  overflow: hidden;
+  color: #FFF;
+  height: 200px;
+}
+footer * {
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+.van {
+    margin: 5% 0;
+    text-align: center;
+}
+
+.van li {
+    display: inline-block;
+}
+
+.van li a {
+    display: block;
+    font: 20px/1.2 'Source Code Pro', sans-serif;
+    padding: 5px 15px;
+    text-transform: uppercase;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+    color: #666666;   
+}
+.objet:hover{  
+	color: red;
+	font-size: 30px;
+}
+footer p {
+	margin: 5%;
+	display: block;
+    font: 20px/1.2 'Source Code Pro', sans-serif;
+    padding: 5px 15px;
+    text-transform: uppercase;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+    color: #666666;   
 }
